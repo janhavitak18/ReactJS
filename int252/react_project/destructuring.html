@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //without destructuring*********************
+        // const vehicles = ["mustang", "expedition", "f-150"];
+        // const car = vehicles[0];
+        // const truck = vehicles[1];
+        // const suv = vehicles[2];
+        // console.log(car);
+
+        //*******with distructuring
+        // const vehicles = ["mustang", "expedition", "f-150"];
+        // const [car, truck, suv] = vehicles;
+        // console.log(car,truck,suv);
+
+        //********************array destructuring **********************
+        // var arr = ["Hello", "World"]
+        // var [first, second] = arr;
+        // console.log(first, second);
+
+        //***************************************************************
+        // var colors = ["violet", "indigo", "blue", "green", "yellow", "Orange", "Red"];
+        // var[color1, color2, color3] = colors;
+        // console.log(color1);
+        // console.log(color2);
+        // console.log(color3);
+
+        //ARRAY DESTRUCTING AND REST OPERATOR
+        // var colors = ["violet", "indigo", "blue", "green", "yellow", "Orange", "Red"];
+
+        // var[a,b,...args] =colors;
+        // console.log(a);
+        // console.log(b);
+        // console.log(args);
+        
+        // ARRAY DESTRUCTURING AND DEFAULT VALUES (works only for var)
+
+        // var x,y;
+        // var [x=50, y =70]=[100];
+        // console.log(x); //100
+        // console.log(y); //70
+
+        // var x=100, y=200;
+        // var [x,y] = [y,x];
+        // console.log(x); //200
+        // console.log(y); //100
+
+        // let colors = ['red', 'yellow'];
+        // let newColors = [...colors, 'Violet' , 'orange', 'Green'];
+        // console.log(newColors);
+
+        // const numbersOne = [1,2,3];
+        // const numbersTwo = [4,5,6];
+        // const numberCombined = [...numbersOne,...numbersTwo];
+        // console.log(numberCombined);
+        
+        //copying an array with SPREAD OPERATOR
+
+        // let colors = ['Red', 'Yellow'];
+        // let newColors = [...colors];
+        // newColors.push('green');
+        // console.log(newColors); 
+        // console.log(colors);
+
+        //WITHOUT USING SPREAD OPERATOR
+
+        // let colors = ['Red', 'Yellow'];
+        // let newColors = colors;
+        // newColors.push('green');
+        // console.log(newColors); 
+        // console.log(colors);
+//Activity:
+
+//         class A{
+//        constructor() {
+//                 this.value = 1;
+//        }
+//        static method() {
+//               return this.value;
+//        }
+// }
+
+// console.log(A.method());
+
+
+// function sum(a,b)
+// {
+//     document.write(a+b);
+// }
+// let arr=[2,3];
+// sum(...arr);
+
+// let name = Array.of("a","b","c","d")  
+// console.log(name)  
+// console.log(name.length) 
+
+// function sum(...c) {
+    
+//     let total=0;
+//     for(let i of c)
+// {
+//     total +=i;
+// }
+// document.write(total);
+// }
+// sum(1,2,3,4,5,6,7);
+
+// const numbers = [1, 2, 3, 4, 5];
+// const squared = numbers.map(x => x * x);
+// console.log(squared);
+
+// function fun(a,b,...c)
+// {
+//     document.write(`${a} ${b}`);
+//     document.write('<br>');
+//     document.write(c);
+//     document.write('<br>');
+//     document.write(c[0]);
+//     document.write('<br>');
+//     document.write(c.length);
+//     document.write('<br>');
+//     document.write(c.indexOf('ashish'));
+// }
+// fun('mohit','neha','pooja','LPU','ashish')
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // // array_name[subscript];
+        // var num;
+        //  num = [2,4,6,8];
+        //  console.log(num[0]);
+        //  console.log(num[1]);
+
+        //************************************************************************************************
+        //  var num = new Array(5);
+        //  var i ;
+        //  for(i =0; i<num.length; i++){
+        //     num[i]=i*5;
+        //     console.log(num[i]);
+        //  }
+
+        //**************************************************************************************************
+
+        // var multi = [[2,3,4],[5,6,7]]
+        // console.log(multi[0][0])
+        // console.log(multi[0][1])
+        // console.log(multi[0][2])
+        // console.log(multi[1][0])
+        // console.log(multi[1][1])
+        // console.log(multi[1][2])
+
+        //**************************************************************************************************
+
+        //***************************passing array to function********************************************
+
+        // var rainbow = new Array("Violet", "indigo", "Blue", "Green", "Yellow", "orange", "Red");
+        // function show(rainbow) {
+        //     for (var i = 0; i < rainbow.length; i++) {
+        //         console.log(rainbow[i]);
+        //     }
+        // }
+        // show(rainbow);
+
+        // var rainbow = new Array("Violet", "indigo", "Blue", "Green", "Yellow", "orange", "Red");
+        // var show = (rainbow) => {
+        //     for (var i = 0; i < rainbow.length; i++) {
+        //         console.log(rainbow[i]);
+        //     }
+        // }
+        // show(rainbow);
+
+        //****************Return array from function******************************************************
+
+        // function show(){
+        //     return new Array("Blue","red","green","yellow")
+        // }
+        // var colors = show()
+        // for(var i in colors){
+        //     console.log(colors[i])
+        // }
+
+        //************************************************************************************************
+
+        // array.from() = it converts array-like values and iterable value into arrays
+
+        // let name = Array.from('javaTpoint')
+        // console.log(name)
+
+        //*************array.of************************************
+        // let name = Array.of(42,10)
+        // console.log(name)
+        // console.log(name.length)
+
+        //************************************************************
+
+        // const num = new Array(5); // output = undefined bcz had not used array.of 
+        // var i;
+        // for (i = 0; i < num.length; i++) {
+        //     console.log(num[i]);
+        // }
+
+        //**************Array.copyWithin()******************************************
+        // const num = [1,2,3,4,5,6,7,8,9,10];
+        // const num1 = [1,2,3,4,5,6,7,8,9,10];
+        // const num2 = [1,2,3,4,5,6,7,8,9,10];
+        // console.log(num.copyWithin(2, 5, 7));
+        // console.log(num1.copyWithin(2, 5)); //ommiting the parameter end
+        // console.log(num2.copyWithin(2));// omitting the parameters start and end
+
+        //**************************************************************************
+        
+        // const numbers4 = [4,9,16,25,29];
+        // let first =  numbers4.find(myFunction);
+
+        // function myFunction(value,index, array){
+        //     return value > 7;
+        // }
+        // console.log(first);
+
+        //*******************************map*******************************
+
+        // const numbers =[65,44,12,4]
+
+        // const newArr = numbers.map(myfunction)
+        // function myfunction(num){
+        //     return num * 10;
+        // }
+        // console.log(newArr);
+
+
+        // const numbers1 = [4,9,16,25];
+        // const newArr1 = numbers1.map(Math.sqrt)
+        // console.log(newArr1);
+
+        //********************************************************************
+
+        // const array1 = [1,4,9,16]; //pass a function to map
+        //  const map1 = array1.map(x=>x*2);
+        //  console.log(map1);
+
+        //*********************************************************************
+
+        // const numbers = [1,2,3];
+        // const doubled = numbers.map((num) => num*2);
+        // console.log(doubled);
+
+        // numbers.forEach((num)=>{
+        //     console.log(num*2);
+        // })
+
+        //**********************************************************************
+
+        // const array1 = [1,2,3,4,5,6,7,8,9,10]; 
+        //  const map1 = array1.map(x=>x*9);
+        //  console.log(map1);
+
+        
+
+    </script>
+</body>
+
+</html>

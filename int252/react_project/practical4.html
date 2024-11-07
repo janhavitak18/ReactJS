@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //demonstrate destructuring , spread operator rest operator 
+
+// Destructuring the array
+const array = ["A", "B", "C", "D", "E"];
+const [first, second, ...rest] = array;
+console.log(first);
+console.log(second);
+console.log(rest); 
+
+
+//spread oprator
+const arr1 = [23, 42, 66];
+const arr2 = [23, 44, 89];
+const combined = [...arr1, ...arr2];
+console.log(combined); 
+
+//create a class named as contact manager and it should have a constructor and use spread operator in add contact  and array function in serach contact
+class Contact_Manager {
+    constructor() {
+        this.contacts = []; 
+    }
+
+    Add(...numbers) {
+        this.contacts.push(...numbers);
+    }
+
+    Search=()=> {
+        console.log("Please wait, we are searching the number...");
+        return this.contacts;
+    }
+}
+
+let man = new Contact_Manager();
+
+man.Add("93894015"); 
+man.Add("87555037");
+
+const result = man.Search(); 
+console.log(result);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
